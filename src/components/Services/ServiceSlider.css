@@ -1,0 +1,134 @@
+.service-slider {
+    width: 100%;
+    overflow: visible;
+}
+
+.service-slider .swiper-slide {
+    height: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+.swiper-button-next-custom *,
+.swiper-button-prev-custom *{
+    color: var(--bg);
+}
+
+.swiper-button-prev-custom {
+    left: -25px;
+}
+
+.swiper-button-next-custom {
+    right: -25px;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+    background: #fff;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.swiper-button-prev-custom.swiper-button-disabled,
+.swiper-button-next-custom.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Кастомная пагинация */
+.swiper-pagination-custom {
+    bottom: 10px !important;
+    text-align: center;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    margin: 0 6px;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+    background: #007bff;
+    transform: scale(1.2);
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet:hover {
+    background: #007bff;
+    transform: scale(1.1);
+}
+
+/* Адаптивные стили для навигации */
+@media (max-width: 768px) {
+    
+    .service-slider {
+        padding: 20px 0 50px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom {
+        display: none; /* Скрываем кнопки на очень маленьких экранах */
+    }
+    
+    .service-slider {
+        padding: 10px 0 10px 0;
+    }
+}
+
+/* Улучшения для ServiceItem */
+.service-slider .swiper-slide > * {
+    width: 100%;
+    height: 600px;
+}
+
+/* Плавная анимация появления */
+.service-slider .swiper-slide {
+    opacity: 0.7;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+.service-slider .swiper-slide-active,
+.service-slider .swiper-slide-next,
+.service-slider .swiper-slide-prev {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Эффект при наведении на слайд */
+.service-slider .swiper-slide:hover {
+    transform: scale(1.02);
+    z-index: 2;
+}
+
+/* Стили для контейнера */
+.sbc-main {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 40px;
+}
+
+
+.swiper-pagination-custom{
+    display: none
+}
