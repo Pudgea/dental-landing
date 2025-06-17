@@ -59,12 +59,12 @@ const ServicesSlider = () => {
                 
                 observeParents={true}
             >
-                <SwiperSlide><ServiceItem img={"/image2.png"} txt={"Лечение во сне"}/></SwiperSlide>
-                <SwiperSlide><ServiceItem img={"/implant.png"} txt={"Имплантация"}/></SwiperSlide>
-                <SwiperSlide><ServiceItem img={"/vin.png"} txt={"Виниры"}/></SwiperSlide>
-                <SwiperSlide><ServiceItem img={"/hygiene.png"} txt={"Проффесиональная гигиена"}/></SwiperSlide>
-                <SwiperSlide><ServiceItem img={"/bracers.png"} txt={"Брекеты | Элайнеры"}/></SwiperSlide>
-                <SwiperSlide><ServiceItem img={"/bleaching.png"} txt={"Отбеливание"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={"image2.png"} txt={"Лечение во сне"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={"implant.png"} txt={"Имплантация"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={"vin.png"} txt={"Виниры"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={"hygiene.png"} txt={"Проффесиональная гигиена"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={"bracers.png"} txt={"Брекеты | Элайнеры"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={"bleaching.png"} txt={"Отбеливание"}/></SwiperSlide>
                 
                 {/* Кастомные кнопки навигации */}
                 <div className="swiper-button-prev-custom">

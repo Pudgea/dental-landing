@@ -16,7 +16,7 @@ function App() {
     <>
     <nav>
         <div className="logo">
-            <img src="/logo.jpg" alt=""/>
+            <img src="logo.jpg" alt=""/>
         </div>
         <ul>
             <li>КЛИНИКА</li>
@@ -89,7 +89,7 @@ function App() {
                     </div>
                 </div>
                 <div className="mc-img">
-                    <img src="/image.png" alt=""/>
+                    <img src="image.png" alt=""/>
                 </div>
             </div>
             <div className="examination">
@@ -106,7 +106,7 @@ function App() {
                     >
                       <SwiperSlide>
                         <Examination 
-                            img={'/1step.png'}
+                            img={'1step.png'}
                             step='Этап 1'
                             head='Сбор данных о состоянии здоровья:'
                             txt='сбор анамнеза и противопоказаний для того, чтобы гарантировать вам 100% приживление импланта'
@@ -114,7 +114,7 @@ function App() {
                       </SwiperSlide>
                       <SwiperSlide>
                         <Examination 
-                            img={'/2step.png'}
+                            img={'2step.png'}
                             step='Этап 2'
                             head='Фотопротокол + 3D ĸомпьютерная томография:'
                             txt='для детального анализа объема вашей кости и фиксации первоначальной клинической ситуации'
@@ -122,7 +122,7 @@ function App() {
                       </SwiperSlide>
                       <SwiperSlide>
                         <Examination
-                            img={'/3step.png'}
+                            img={'3step.png'}
                             step='Этап 3'
                             head='На основе компьютерного моделирования врач рассчитает толщину и высоту кости'
                             txt='благодаря чему с точностью до миллиметра определит область установки импланта'
@@ -130,7 +130,7 @@ function App() {
                       </SwiperSlide>
                       <SwiperSlide>
                         <Examination
-                            img={'/4step.png'}
+                            img={'4step.png'}
                             step='Этап 4'
                             head='Составление 3 планов лечения'
                             txt='с различными системами имплантов от эконом до премиум-сегмента'
@@ -138,7 +138,7 @@ function App() {
                       </SwiperSlide>
                       <SwiperSlide>
                         <Examination
-                            img={'/5step.png'}
+                            img={'5step.png'}
                             step='Этап 5'
                             head='Выбор даты и времени операции'
                             txt='Установка импланта зуба длится 20 минут — быстрее, чем обычный стоматологический прием: без болевых ощущений; с минимальной травматичностью; без отёков.'
