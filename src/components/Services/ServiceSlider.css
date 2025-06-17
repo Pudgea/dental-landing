@@ -98,7 +98,7 @@
 /* Улучшения для ServiceItem */
 .service-slider .swiper-slide > * {
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
 
 /* Плавная анимация появления */
