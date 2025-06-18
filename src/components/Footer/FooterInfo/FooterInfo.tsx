@@ -1,5 +1,6 @@
 import { phoneNumber } from "../../../constants/infoConstants";
 import whatsappClick from "../../../utils/whatsappClick";
+import "./FooterInfo.css"
 
 const FooterInfo = () => {
     return ( 
