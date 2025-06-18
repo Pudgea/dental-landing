@@ -1,15 +1,16 @@
-.command-main{
+.command-main {
     display: flex;
     gap: var(--g10);
     overflow-y: auto;
-}
-.command-container{
+  }
+
+  .command-container{
     display:flex ;
     flex-direction: column;
     gap: var(--g20);
 }
-
-.command-item{
+  
+  .command-item {
     min-width: 50px;
     max-width: 50px;
     height: 400px;
@@ -18,59 +19,73 @@
     align-items: center;
     justify-content: center;
     border-radius: var(--br10);
-    transition: 0.15s ease;
+    transition: all 0.15s ease;
     opacity: 0.7;
-}
-.command-item-info{
-    display: none;
-}
-.command-item:hover .command-item-info{
-    display: flex;
-}
-.command-item:hover{
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .command-item.expanded {
     min-width: 300px;
     max-width: 300px;
-    position: relative;
-    transition: 0.15s ease;
     opacity: 1;
-}
-.command-item img{
+  }
+  
+  .command-item img {
     height: 100%;
     width: fit-content;
-}
-.command-item-info{
+  }
+  
+  .command-item-info {
     position: absolute;
     background-color: color-mix(in srgb, var(--primary) 70%, transparent);
     padding: var(--p15);
     border-radius: var(--br10);
     height: 175px;
     bottom: 0;
-
     flex-direction: column;
     gap: 5px;
     overflow: hidden;
-}
-
-.cii-main{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    display: flex;
+  }
+  
+  .command-item-info.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .cii-main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-}
-.cii-rating{
+  }
+  
+  .cii-rating {
     font-size: var(--f14);
     display: flex;
     gap: 3px;
     align-items: center;
-}
-.cii-name{
+    fill: var(--txt);
+  }
+  
+  .cii-name {
     font-weight: 700;
     font-size: var(--f16);
-}
-.cii-speciality{
+  }
+  
+  .cii-speciality {
     font-size: var(--f14);
-}
-.cii-desc{
+  }
+  
+  .cii-experience {
+    font-size: var(--f14);
+  }
+  
+  .cii-desc {
     font-size: var(--f14);
     font-style: italic;
-}
+  }

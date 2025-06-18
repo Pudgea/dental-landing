@@ -11,6 +11,7 @@
   --bg: #373435;
   --primary: #FDDAA4;
   --bg-light: #524d4c;
+  --txt: #fff;
 
   --p15: 15px;
   --p20: 20px;
@@ -109,7 +110,7 @@ nav li{
   margin-left: 10px;
 }
 .ei-address p{
-  font-size: var(--f12) !important;
+  font-size: var(--f14) !important;
   font-weight: 300;
 }
 

@@ -10,6 +10,9 @@ import Examination from './components/Examination/examination';
 import CommandMain from './components/Command/CommandMain';
 import ServicesSlider from './components/Services/ServicesSlider';
 import whatsappClick from './utils/whatsappClick';
+import MemoContainer from './components/Memo/MemoContainer';
+import Footer from './components/Footer/Footer';
+import { phoneNumber } from './constants/infoConstants';
 
 function App() {
   return (
@@ -30,7 +33,7 @@ function App() {
                     </div>
                     <div className="ei-address">
                         <i className="bi bi-telephone-fill"></i>
-                        <p>+993 64 076637</p>
+                        <p>+{phoneNumber}</p>
                     </div>
                 </div>
                 {/* <button>=</button> */}
@@ -181,6 +184,8 @@ function App() {
             </main>
         </div>
         <main>
+            <MemoContainer/>
+            <Footer/>
         </main>
     </div>
     </>

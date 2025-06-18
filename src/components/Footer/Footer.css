@@ -1,0 +1,16 @@
+.footer-container{
+    display: flex;
+    width: 100%;
+    background-color: var(--bg-light);
+    border-radius: var(--br10);
+    padding: var(--p20);
+    flex-wrap: wrap;
+    gap: var(--g20);
+}
+.footer-map{
+    min-width: 300px;
+    flex: 1;
+    height: 350px;
+    border-radius: var(--br10);
+    overflow: hidden;
+}
