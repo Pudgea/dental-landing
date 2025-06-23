@@ -11,23 +11,45 @@
 }
   
   .command-item {
-    min-width: 50px;
-    max-width: 50px;
-    height: 400px;
+    min-width: 100px;
+    max-width: 100px;
+    height: 500px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: var(--br10);
     transition: all 0.15s ease;
-    opacity: 0.7;
     cursor: pointer;
     position: relative;
   }
+  .command-item img{
+    opacity: 0.7;
+  }
+  .command-item.expanded img {
+    opacity: 1;
+  }
+  .command-item.expanded .command-item-name {
+    display: none;
+  }
+  
+  .command-item-name{
+    position: absolute;
+    opacity: 1;
+    z-index: 4;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+
+    width: max-content;
+    font-weight: 700;
+
+    left: 95px;
+    bottom: 10px
+  }
   
   .command-item.expanded {
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 350px;
+    max-width: 350px;
     opacity: 1;
   }
   
