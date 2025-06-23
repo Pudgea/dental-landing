@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import ServiceItem from './ServiceItem';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules'
 import "./ServiceSlider.css"
+import { imgSrc } from '../../constants/devConstants';
 
 const ServicesSlider = () => {
     return ( 
@@ -59,12 +60,12 @@ const ServicesSlider = () => {
                 
                 observeParents={true}
             >
-                <SwiperSlide><ServiceItem img={"image2.png"} txt={"Лечение во сне"}/></SwiperSlide>
-                <SwiperSlide><ServiceItem img={"implant.png"} txt={"Имплантация"}/></SwiperSlide>
-                <SwiperSlide><ServiceItem img={"vin.png"} txt={"Виниры"}/></SwiperSlide>
-                <SwiperSlide><ServiceItem img={"hygiene.png"} txt={"Проффесиональная гигиена"}/></SwiperSlide>
-                <SwiperSlide><ServiceItem img={"bracers.png"} txt={"Брекеты | Элайнеры"}/></SwiperSlide>
-                <SwiperSlide><ServiceItem img={"bleaching.png"} txt={"Отбеливание"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={imgSrc + "image2.png"} txt={"Лечение во сне"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={imgSrc + "implant.png"} txt={"Имплантация"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={imgSrc + "vin.png"} txt={"Виниры"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={imgSrc + "hygiene.png"} txt={"Проффесиональная гигиена"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={imgSrc + "bracers.png"} txt={"Брекеты | Элайнеры"}/></SwiperSlide>
+                <SwiperSlide><ServiceItem img={imgSrc + "bleaching.png"} txt={"Отбеливание"}/></SwiperSlide>
                 
                 {/* Кастомные кнопки навигации */}
                 <div className="swiper-button-prev-custom">
