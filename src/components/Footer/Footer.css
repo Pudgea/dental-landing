@@ -6,6 +6,7 @@
     padding: var(--p20);
     flex-wrap: wrap;
     gap: var(--g20);
+    margin-top: 40px;
 }
 .footer-map{
     min-width: 300px;

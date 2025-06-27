@@ -7,13 +7,15 @@
     flex-wrap: nowrap;
     width: 100%;
     justify-content: space-between  ;
+    height: 700px;
 }
 .welocoming-service-data{
     display: flex;
     flex-direction: column;
-    gap: var(--g20);
+    gap: 40px;
     width: 100%;
-
+    flex: 1;
+    justify-content: center;
 }
 .wcd-cover{
     padding: 30px;
@@ -51,6 +53,9 @@
 }
 
 @media (max-width: 668px) {
+    .welcoming-services{
+        height: fit-content;
+    }
     .welcoming-services{
         flex-wrap: wrap-reverse;
     }

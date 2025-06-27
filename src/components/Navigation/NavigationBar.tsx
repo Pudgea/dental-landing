@@ -42,7 +42,11 @@ const NavigationBar = () => {
                         <NavigationServices />
                     </div>}
                 </li>
-                <li>КОМАНДА</li>
+                <li>
+                    <p onClick={() => navigate('contacts')}>
+                        КОНТАКТЫ
+                    </p>
+                </li>
             </ul>
             <div id="essential-info">
                 <div className="ei-data">

@@ -48,7 +48,7 @@ const NavigationServices = () => {
                                     <div 
                                         key={subIndex}
                                         className="subcategory-item"
-                                        onClick={() => navigate(`/service/${subcategory.name.replace(/ /g, '-')}`)}
+                                        onClick={() => navigate(`service/${subcategory.name.replace(/ /g, '-')}`)}
                                     >
                                         <h4>{subcategory.name}</h4>
                                         <p>{subcategory.description}</p>

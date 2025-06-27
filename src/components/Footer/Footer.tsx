@@ -1,3 +1,4 @@
+import { mapLink } from "../../constants/infoConstants";
 import "./Footer.css"
 import FooterInfo from "./FooterInfo/FooterInfo";
 
@@ -6,7 +7,7 @@ const Footer = () => {
         <FooterInfo />
         <div className="footer-map">
         <iframe 
-            src="https://yandex.kz/map-widget/v1/-/CHWprR0X" 
+            src={mapLink} 
             width="100%" 
             height="100%" 
         >

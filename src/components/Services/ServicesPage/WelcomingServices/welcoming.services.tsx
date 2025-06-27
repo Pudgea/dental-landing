@@ -6,7 +6,7 @@ const WelcomingServices = ({title, description}:{title:string, description: stri
     return ( <div className="welcoming-services">
         <div className="wcd-cover">
             <div className="welocoming-service-data">
-                <p className="title">{title}</p>
+                <p className="w-title">{title.toUpperCase()}</p>
                 <div className="welcoming-service-desc">
                     {description.map((d) => <p className="head">{d}</p>)}
                 </div>
