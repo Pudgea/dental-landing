@@ -115,33 +115,44 @@
     line-height: 1.4;
 }
 
-/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
+    .services-dropdown {
+      position: fixed;
+      top: 105px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      z-index: 1000;
+      background-color: var(--bg-light);
+    }
+  
     .navigation-services-container {
-        position: static;
-        width: 100%;
-        box-shadow: none;
-        border-radius: 0;
-        background: var(--bg-light);
+      position: static;
+      width: 100%;
+      box-shadow: none;
+      border-radius: 0;
+      background: transparent;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
     }
-    
+  
     .subcategories-dropdown {
-        position: static;
-        width: 100%;
-        box-shadow: none;
-        border-radius: 0;
-        background: transparent;
-        padding: 0 0 0 20px;
-        transform: none;
-        opacity: 1;
-        visibility: visible;
+      position: static;
+      width: 100%;
+      padding-left: 16px;
+      background: transparent;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
     }
-    
+  
     .service-category:hover .subcategories-dropdown {
-        transform: none;
+      transform: none;
     }
-    
+  
     .subcategory-item:hover {
-        transform: none;
+      transform: none;
     }
-}
+  }
+  

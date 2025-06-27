@@ -1,5 +1,5 @@
-import { imgSrc } from '../../../constants/devConstants';
-import whatsappClick from '../../../utils/whatsappClick';
+import { imgSrc } from '../../../../constants/devConstants';
+import whatsappClick from '../../../../utils/whatsappClick';
 import './index.css'
 
 const WelcomingServices = ({title, description}:{title:string, description: string[]}) => {

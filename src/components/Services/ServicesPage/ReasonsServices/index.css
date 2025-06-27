@@ -1,0 +1,18 @@
+.reasons-services{
+    display: flex;
+    flex-direction: column;
+    gap: var(--g20);
+    width: 100%;
+}
+
+.reasons-list{
+    padding-left:var(--p20);
+}
+.reasons-list ul{
+    display: flex;
+    flex-direction: column;
+    gap: var(--g10);
+}
+.reasons-list li{
+    list-style-type: disc;
+}

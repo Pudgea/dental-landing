@@ -13,6 +13,7 @@ import MemoContainer from '../components/Memo/MemoContainer';
 import whatsappClick from '../utils/whatsappClick';
 import CommandMain from '../components/Command/CommandMain';
 import { imgSrc } from '../constants/devConstants';
+import MethodsBlock from '../components/Methods/MethodsBlock/MethodsBlock';
 
 const MainLayout = () => {
     return ( 
@@ -160,6 +161,7 @@ const MainLayout = () => {
             </main>
         </div>
         <main>
+            <MethodsBlock />
             <MemoContainer/>
             <Footer/>
         </main>

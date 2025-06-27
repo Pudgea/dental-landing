@@ -1,0 +1,61 @@
+.benefit-services {
+    overflow: hidden;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.benefits-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--br10);
+}
+
+.benefits-track {
+    display: flex;
+    gap: 20px;
+    animation: scroll 45s linear infinite;
+    width: max-content;
+}
+
+.benefits-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .benefits-track {
+        gap: 15px;
+        animation-duration: 25s;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefits-track {
+        gap: 10px;
+        animation-duration: 20s;
+    }
+}
+
+
+
+
+.benefit-item-services{
+    background-color: var(--bg-light);
+    height: 80px;
+    padding-inline: var(--p20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--br10);
+    overflow: hidden;
+}

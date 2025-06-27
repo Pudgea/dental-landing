@@ -6,7 +6,7 @@ export interface Service {
   export interface Subcategory {
     name: string;
     description: string;
-    details: string[]
+    details?: string[]
     benefits?: string[];
     reasons?: string []
     stages?:string[]
@@ -20,7 +20,7 @@ export interface Service {
   export interface SubcategoryType {
     name: string;
     description: string;
-    advantages: string[];
+    features: string[];
   }
   
   export interface FAQ {

@@ -57,31 +57,11 @@ button{
   cursor: pointer;
 }
 
-nav{
-  display: flex;
-  height: 70px;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--g10);
-  padding: var(--p15) var(--p20);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  background-color: var(--bg);
-}
 img{
   width: 100%;
   height: inherit;    
 }
-.logo{
-  height: 100%;
-}
-.logo img{
-  width: min-content !important;
-  max-width: 111px;
-}
+
 .services-dropdown {
   opacity: 0;
   visibility: hidden;
@@ -99,16 +79,6 @@ img{
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-}
-nav ul{
-  display: flex;
-  gap:var(--g20);
-  font-size: var(--f14);
-  align-items: center;
-}
-nav li{
-  font-weight: 500;
-  cursor: pointer;
 }
 
 #essential-info{
@@ -397,9 +367,6 @@ main{
       width: 100%;
       height: 300px;
       order: -1; 
-  }
-  nav li{
-      display: none;
   }
   .mc-txt p {
       font-size: 14px;

@@ -2,6 +2,7 @@ import {BrowserRouter, Navigate, Route, Routes} from "react-router";
 import MainLayout from './layouts/main.layout';
 import ServiceLayout from './layouts/service.layout';
 import RootLayout from './layouts/root.layout';
+import { imgSrc } from "./constants/devConstants";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Route element={<RootLayout />}>
           <Route index element={<MainLayout/>} />
           <Route path='service/:name' element={<ServiceLayout />} />
-          <Route path="*" element={<Navigate replace to="/"/>}/>
+          <Route path="*" element={<Navigate replace to={imgSrc}/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

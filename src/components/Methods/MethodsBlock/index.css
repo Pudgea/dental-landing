@@ -1,0 +1,13 @@
+.methods-block{
+    display: flex;
+    flex-direction: column;
+    gap: var(--g20);
+    width: 100%;
+}
+.methods-items{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--g20);
+    align-items: center;
+}
