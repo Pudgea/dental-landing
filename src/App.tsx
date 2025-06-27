@@ -9,10 +9,10 @@ function App() {
     <>
     <BrowserRouter >
       <Routes>
-        <Route element={<RootLayout />}>
+        <Route path={imgSrc} element={<RootLayout />}>
           <Route index element={<MainLayout/>} />
           <Route path='service/:name' element={<ServiceLayout />} />
-          <Route path="*" element={<Navigate replace to={imgSrc}/>}/>
+          <Route path="*" element={<Navigate replace to='/'/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
