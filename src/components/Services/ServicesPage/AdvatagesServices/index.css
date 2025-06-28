@@ -1,0 +1,11 @@
+.advatages-services{
+    display: flex;
+    flex-direction: column;
+    gap: var(--g20);
+}
+.advatages-services ul{
+    padding-left: var(--p20);
+}
+.advatages-services li{
+    list-style-type: disc;
+}

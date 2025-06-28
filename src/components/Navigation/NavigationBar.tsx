@@ -25,7 +25,7 @@ const NavigationBar = () => {
         <div style={{flexDirection: 'row', display: 'flex'}}>
             <ul>
                 <li>
-                    <p onClick={() => navigate('/')}>
+                    <p onClick={() => navigate('')}>
                         КЛИНИКА
                     </p>
                 </li>

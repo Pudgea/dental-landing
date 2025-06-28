@@ -1,0 +1,6 @@
+.desc-service{
+    display: flex;
+    flex-direction: column;
+    gap: var(--g20);
+    width: 100%;
+}

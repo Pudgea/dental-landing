@@ -19,13 +19,24 @@
     width: 100%;
     border-radius: var(--br10);
     overflow: hidden;
+    cursor: pointer;
 }
+
+.tis-container img{
+    transition: transform 0.3s ease;
+}
+.tis-container:hover img{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
 .tis-container img{
     height: 300px;
     object-fit: cover; 
 
 }
 .types-item-services{
+    z-index: 3;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -35,7 +46,10 @@
     background-color: var(--bg-light);
     border-radius: var(--br10);
     min-height: 175px;
+
+    gap: var(--g20);
 }
+
 .tis-advantages{
     padding-left: var(--p20);
 }

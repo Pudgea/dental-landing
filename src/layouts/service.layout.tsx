@@ -6,6 +6,9 @@ import WelcomingServices from "../components/Services/ServicesPage/WelcomingServ
 import BenefitsServices from "../components/Services/ServicesPage/BenefitsServices/benefits.services";
 import ReasonsServices from "../components/Services/ServicesPage/ReasonsServices/reasons.services";
 import TypesServices from "../components/Services/ServicesPage/TypesServices/types.services";
+import DescriptionService from "../components/Services/ServicesPage/DescriptionService/description.service";
+import AdvantagesServices from "../components/Services/ServicesPage/AdvatagesServices/advantages-services";
+import FAQComponent from "../components/common/faq.component";
 
 const ServiceLayout = () => {
     const {name} = useParams<{name:string}>()
@@ -30,10 +33,13 @@ const ServiceLayout = () => {
     return ( 
         <div className="main-container">
             <main>
-                <WelcomingServices title={cService.name} description={cService.details ? [cService.description, ...cService.details]:[cService.description]} />
+                <WelcomingServices title={cService.name} description={[cService.description]} />
                 {cService.benefits && <BenefitsServices benefits={cService.benefits} />}
+                {cService.details && <DescriptionService desc={cService.details} />}
                 {cService.reasons && <ReasonsServices reasons={cService.reasons} />}
                 {cService.types && <TypesServices types={cService.types} />}
+                {cService.advantages && <AdvantagesServices advatages={cService.advantages} />}
+                {cService.faq && <FAQComponent faq={cService.faq} />}
             </main>
         </div> 
     );

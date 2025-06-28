@@ -1,2 +1,3 @@
 export const imgSrc= '/dental-landing/'
-// export const imgSrc= '/'
+export const api = 'dental-landing'
+// export const imgSrc= '/' 
