@@ -1,5 +1,5 @@
 import type { SubcategoryType } from "../../../../models/service.model";
-import TypesItemServices from "./service-item.services";
+import TypesItemServices from "./types-item.services";
 import './index.css'
 
 const TypesServices = ({types}:{types:SubcategoryType[]}) => {
