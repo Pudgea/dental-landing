@@ -1,0 +1,47 @@
+.methods-item-reversed{
+    flex-direction: row-reverse !important;
+}
+
+.tis-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: var(--g20)
+}
+.tis-img{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    overflow: hidden;
+    border-radius: var(--br10);
+}
+.tis-img img{
+    object-fit: cover; 
+    width: 100%;
+    height: fit-content;
+}
+.types-item-services{
+    display: flex;
+    flex-direction: column;
+    gap: var(--g10);
+    flex: 1;
+    min-width: 350px;
+}
+.types-item-services li{
+    list-style-type:disc !important;
+}
+.tis-advantages{
+    padding-left:20px;
+}
+
+@media (max-width:700px) {
+    .tis-img{
+        width: 100%;
+    }
+    .tis-img img{
+        height: 100%;
+    }
+}

@@ -1,0 +1,13 @@
+.steps-services{
+ display: flex;
+ flex-direction: column;
+ gap: var(--g20);
+ width: 100%;
+ position: relative;
+ align-items: center;
+}
+
+
+.steps-services-slider{
+    width: 100%;
+}

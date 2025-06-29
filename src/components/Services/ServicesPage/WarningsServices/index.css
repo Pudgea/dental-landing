@@ -1,0 +1,12 @@
+.warnings-services{
+    display: flex;
+    flex-direction: column;
+    gap: var(--g20);
+    width: 100%;
+}
+.warnings-services ul {
+    padding-left: var(--p20);
+}
+.warnings-services li{
+    list-style-type: disc;
+}

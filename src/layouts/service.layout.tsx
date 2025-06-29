@@ -8,7 +8,9 @@ import ReasonsServices from "../components/Services/ServicesPage/ReasonsServices
 import TypesServices from "../components/Services/ServicesPage/TypesServices/types.services";
 import DescriptionService from "../components/Services/ServicesPage/DescriptionService/description.service";
 import AdvantagesServices from "../components/Services/ServicesPage/AdvatagesServices/advantages-services";
-import FAQComponent from "../components/common/faq.component";
+import FAQComponent from "../components/common/FAQComponent/faq.component";
+import StepsServices from "../components/Services/ServicesPage/StepsServices/steps.services";
+import WarningsServices from "../components/Services/ServicesPage/WarningsServices/warnings.services";
 
 const ServiceLayout = () => {
     const {name} = useParams<{name:string}>()
@@ -38,6 +40,8 @@ const ServiceLayout = () => {
                 {cService.details && <DescriptionService desc={cService.details} />}
                 {cService.reasons && <ReasonsServices reasons={cService.reasons} />}
                 {cService.types && <TypesServices types={cService.types} />}
+                {cService.preparationSteps && <StepsServices arr={cService.preparationSteps} title="Как подготовить зубы" />}
+                {cService.warnings && <WarningsServices warnings={cService.warnings} />}
                 {cService.advantages && <AdvantagesServices advatages={cService.advantages} />}
                 {cService.faq && <FAQComponent faq={cService.faq} />}
             </main>

@@ -11,14 +11,19 @@ export interface Service {
     reasons?: string []
     stages?:string[]
     types?: SubcategoryType[]
-    preparationSteps?: string[];
-    treatmentSteps?: string []
+    preparationSteps?: SubcategorySteps[];
+    treatmentSteps?: SubcategorySteps []
     careRecommendations?: string[];
     warnings?: string[]
     faq?: FAQ[];
     advantages?: SubcategoryAdvantage[]
   }
 
+  export interface  SubcategorySteps {
+    img?: string
+    desc?:string
+    title: string 
+  }
   export type SubcategoryAdvantageType = 'desc'|'list'
   export interface SubcategoryAdvantage {
     type: SubcategoryAdvantageType

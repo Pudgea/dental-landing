@@ -1,0 +1,66 @@
+.cl-div{
+    display: flex;
+    flex-direction: column;
+    gap: var(--g20);
+    width: 100%;
+}
+.cl-comforts{
+    display: flex;
+    gap:var(--g10);
+    flex-wrap: wrap;
+}
+.cl-comfort{
+    text-align: center;
+    background-color: var(--primary);
+    padding: var(--p20);
+    border-radius: var(--br10);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cl-comfort p{
+    color: var(--bg) !important;
+}
+
+.cl-clinic{
+    display: flex;
+    gap: var(--g20);
+}
+
+.cl-clinic-faxs{
+    display: flex;
+    gap: var(--g10);
+}
+.cl-clinic-fax{
+    flex: 1;
+    min-width: 220px;
+    border-radius: var(--br10);
+    padding: var(--p20);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--primary);
+}
+.cl-clinic-fax p{
+    color: var(--bg);
+}
+.cl-clinic-info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--g10);
+}
+
+@media (max-width: 768px) {
+    .cl-clinic{
+        flex-direction: column;
+    }
+
+    .cl-clinic-fax{
+        min-width: min-content;
+    }
+}

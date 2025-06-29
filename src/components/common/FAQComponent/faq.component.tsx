@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { FAQ } from "../../models/service.model";
+import type { FAQ } from "../../../models/service.model";
 import './index.css'
 
 

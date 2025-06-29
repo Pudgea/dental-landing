@@ -4,6 +4,7 @@ import ServiceLayout from './layouts/service.layout';
 import RootLayout from './layouts/root.layout';
 import { api } from "./constants/devConstants";
 import ContactLayout from "./layouts/ContactsLayout/contacts.layout";
+import ClinicLayout from "./layouts/ClinicLayout/clinic.layout";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path={api} element={<RootLayout />}>
           <Route index element={<MainLayout/>} />
+          <Route path="clinic" element={<ClinicLayout/>}/>
           <Route path='service/:name' element={<ServiceLayout />} />
           <Route path='contacts' element={<ContactLayout />} />
         </Route>

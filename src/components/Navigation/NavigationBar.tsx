@@ -26,6 +26,11 @@ const NavigationBar = () => {
             <ul>
                 <li>
                     <p onClick={() => navigate('')}>
+                        ГЛАВНАЯ
+                    </p>
+                </li>
+                <li>
+                    <p onClick={() => navigate('clinic')}>
                         КЛИНИКА
                     </p>
                 </li>

@@ -2,7 +2,8 @@
     display: flex;
     width: 100%;
     background-color: var(--bg-light);
-    border-radius: var(--br10);
+    border-top-left-radius: var(--br10);
+    border-top-right-radius: var(--br10);
     padding: var(--p20);
     flex-wrap: wrap;
     gap: var(--g20);
